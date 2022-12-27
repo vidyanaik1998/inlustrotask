@@ -1,0 +1,125 @@
+body {
+    @apply bg-white px-8 py-10;
+}
+
+.header:before {
+    content: "";
+    @apply block w-[30px] h-[30px] rounded-[50%] border-[5px] border-[#247099];
+}
+
+.searchfield {
+    @apply absolute top-[10%] left-[50%];
+    transform: translate(-50%, -50%);
+}
+
+:where(.css-dev-only-do-not-override-9ntgx0).ant-input-affix-wrapper >input.ant-input{
+    @apply h-[35px]
+}
+
+.navbar .anticon svg{
+    @apply text-[22px]
+}
+.ant-layout-sider-children div{
+    @apply !m-0
+}
+.increment .anticon , .increment p{
+    @apply !text-green-800;
+}
+.decrement .anticon , .decrement p {
+    @apply !text-red-800;
+}
+:where(.css-dev-only-do-not-override-9ntgx0).ant-layout .ant-layout-sider-has-trigger{
+@apply !bg-white
+}
+
+:where(.css-dev-only-do-not-override-9ntgx0).ant-menu-dark .ant-menu-item-selected{
+    @apply !text-black
+}
+:where(.css-dev-only-do-not-override-9ntgx0).ant-menu-inline .ant-menu-submenu, :where(.css-dev-only-do-not-override-9ntgx0).ant-menu-vertical .ant-menu-submenu{
+    @apply !text-black hover:!text-black  
+}
+:where(.css-dev-only-do-not-override-9ntgx0).ant-menu-dark:not(.ant-menu-horizontal) .ant-menu-submenu-title:hover{
+    @apply !bg-[#1677ff]
+}
+:where(.css-dev-only-do-not-override-9ntgx0).ant-menu-dark:not(.ant-menu-horizontal) .ant-menu-item-selected{
+    @apply !text-white
+}
+:where(.css-dev-only-do-not-override-9ntgx0).ant-menu-dark.ant-menu-inline .ant-menu-item{
+    @apply text-black
+}
+:where(.css-dev-only-do-not-override-9ntgx0).ant-menu-dark .ant-menu-submenu-selected >.ant-menu-submenu-title{
+    @apply text-black
+}
+:where(.css-dev-only-do-not-override-9ntgx0).ant-layout .ant-layout-sider-children div{
+    @apply !text-black
+}
+:where(.css-dev-only-do-not-override-9ntgx0).ant-menu-dark{
+    @apply !bg-white
+}
+:where(.css-dev-only-do-not-override-9ntgx0).ant-menu-dark.ant-menu-inline .ant-menu-sub.ant-menu-inline{
+    @apply !bg-white
+}
+:where(.css-dev-only-do-not-override-9ntgx0).ant-menu .ant-menu-item .ant-menu-item-icon svg, :where(.css-dev-only-do-not-override-9ntgx0).ant-menu .ant-menu-submenu-title .ant-menu-item-icon svg{
+    @apply text-black;
+}
+
+.status:before {
+    content: "";
+    @apply block w-[3px] h-[3px] rounded-[50%] border-[5px] border-[#247099];
+}
+
+@keyframes chartjs-render-animation {
+    from {
+      opacity: 0.99;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .chartjs-render-monitor {
+    animation: chartjs-render-animation 1ms;
+  }
+  .chartjs-size-monitor,
+  .chartjs-size-monitor-expand,
+  .chartjs-size-monitor-shrink {
+    position: absolute;
+    direction: ltr;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    pointer-events: none;
+    visibility: hidden;
+    z-index: -1;
+  }
+  .chartjs-size-monitor-expand > div {
+    position: absolute;
+    width: 1000000px;
+    height: 1000000px;
+    left: 0;
+    top: 0;
+  }
+  .chartjs-size-monitor-shrink > div {
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    left: 0;
+    top: 0;
+  }
+  
+  :where(.css-dev-only-do-not-override-9ntgx0).ant-select-single:not(.ant-select-customize-input) .ant-select-selector{
+      @apply border-0;
+  }
+
+  :where(.css-dev-only-do-not-override-9ntgx0).ant-progress.ant-progress-show-info .ant-progress-outer{
+      @apply w-[90%];
+  }
+
+  :where(.css-dev-only-do-not-override-9ntgx0).ant-form-item .ant-form-item-label{
+      @apply !text-left;
+  }
+
+  :where(.css-dev-only-do-not-override-acm2ia).ant-progress .ant-progress-outer{
+      @apply !w-[90%]
+  }
