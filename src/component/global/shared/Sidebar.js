@@ -56,7 +56,7 @@ const sidebardata = [
     {
         label: 'Customers',
         icon: <TeamOutlined />,
-        link: '/',
+        link: '/customer',
         state: 'active'
     },
     {
