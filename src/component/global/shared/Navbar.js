@@ -9,6 +9,7 @@ import { UserOutlined } from '@ant-design/icons';
 import { Avatar } from 'antd';
 import { AutoComplete } from 'antd';
 import { getHomePageSearchContentAPI } from "../../APIIntegration/apicalls";
+import { Link } from "react-router-dom";
 const mockVal = (str, repeat = 1) => ({
   value: str.repeat(repeat),
 });
@@ -52,18 +53,22 @@ export default function Navbar() {
         <h2 className="header pt-2 flex gap-2 font-bold  items-center ">Clarity Ui</h2>
         <div className="searchfield">
           <AutoComplete
+           
             value={inputValue}
-
-            dataSource={dataSource.map((item) => {
-              console.log("item", item)
-              return (
-                <div className="grid pb-3">
-                  <img className="w-[40px] h-[40px]" src={item?.image} alt={item?.image} />
-                  <h1>
-                    {item.firstName} {item?.lastName}
-                  </h1></div>
-              )
-            })}
+            dataSource={
+              dataSource.map((item) => {
+                return (
+                  <>
+                  <div className="grid pb-3">
+                    <img className="w-[40px] h-[40px]" src={item?.image} alt={item?.image} />
+                    <h1>
+                      {item.firstName} {item?.lastName}
+                    </h1>                 
+                   </div>
+                    </>
+                )
+              })
+            }
             notFoundContent="no result found"
             onSelect={onSelect}
             onSearch={onSearch}

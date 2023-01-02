@@ -141,9 +141,12 @@ body {
   }
 
   :where(.css-dev-only-do-not-override-acm2ia).ant-input-affix-wrapper:focus, :where(.css-dev-only-do-not-override-acm2ia).ant-input-affix-wrapper-focused{
-      @apply !border-[#d9d9d9]  !shadow-none;
+      @apply !border-[#ebe7e7]  !shadow-none;
   }
   :where(.css-dev-only-do-not-override-acm2ia).ant-input-affix-wrapper:not(:where(.css-dev-only-do-not-override-acm2ia).ant-input-affix-wrapper-disabled):hover{
-    @apply !border-[#d9d9d9] !shadow-none;
+    @apply !border-[#ebe7e7] !shadow-none;
 
+  }
+  :where(.css-dev-only-do-not-override-acm2ia).ant-input-affix-wrapper{
+      @apply border-[#ebe7e7]
   }
