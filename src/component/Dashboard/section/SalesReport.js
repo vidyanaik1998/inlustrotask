@@ -85,17 +85,17 @@ const ChartContainer = () => {
         datasets: [
             {
                 label: "Sales1",
-                backgroundColor: "rgba(242,153,74,.1)",
-                borderColor: "rgba(242,153,74,.7)",
-                fill: true,
+                backgroundColor: "rgb(232 233 251)",
+                borderColor: "rgb(69, 87, 246)",
+                // fill: true,
                 data: data.map((item) => item.sales2),
                 lineTension: 0.2,
             },
             {
                 label: "Sales2",
-                backgroundColor: "rgba(166, 74, 242,.1)",
-                borderColor: "rgba(166, 74, 242,.7)",
-                fill: true,
+                backgroundColor: "rgb(232 233 251)",
+                borderColor: "rgb(142 152 237)",
+                // fill: true,
                 data: data.map((item) => item.sales1),
                 lineTension: 0.3,
             },

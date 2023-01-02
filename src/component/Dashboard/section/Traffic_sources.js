@@ -19,7 +19,7 @@ const TrafficSources = () => {
         <>
 
             <div className=' border-[1px] rounded-[8px] border-[#d1c7c7] p-3'>
-                <div className='flex justify-between pb-[39px]'>
+                <div className='flex justify-between pb-[25px]'>
                     <h3 className=' text-[18px] font-bold'>Traffic Sources</h3>
                     <Select
                         value={value}

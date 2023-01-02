@@ -13,10 +13,10 @@ const Dashboard = () => {
     return (
         <>
             <div className='grid pt-7 grid-cols-12'>
-                <div className=' relative sm:col-span-2 col-span-10'>
+                <div className='lg:block hidden relative sm:col-span-2 col-span-10'>
                     <Sidebar />
                 </div>
-                <div className='sm:pt-0 pt-24 sm:ml-10 sm:col-span-10 col-span-12'>
+                <div className='pt-0 lg:ml-10 sm:col-span-10 col-span-12'>
                     <p className='text-[20px] font-bold'>Hey mariana
                         <span className='text-[18px] font-normal'>- here's what's happening with your store today</span>
                     </p>
