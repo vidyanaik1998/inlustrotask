@@ -2,7 +2,6 @@ import { Badge, Form, Input } from "antd";
 import React, { useRef, useState } from "react";
 // import "../../../style/global.css"
 import '../../style/global.css'
-import search from "../../../public/assets/icons/search.svg";
 import Icon, { SearchOutlined, MailOutlined, BellOutlined, MenuOutlined } from '@ant-design/icons';
 import Sidebar from "./Sidebar";
 import { Drawer } from "antd";
@@ -28,21 +27,21 @@ export default function Navbar() {
   };
 
   const [dataSource, setdataSource] = useState([]);
-  const onSearch =async  (searchText) => {
+  const onSearch = async (searchText) => {
     setInputValue(searchText);
 
     const res = await getHomePageSearchContentAPI(searchText)
-    .then((res) => {
-      setdataSource(res?.users);
-    })
-    .catch((err) => {
-      console.log(err);
-    });
-  };      
+      .then((res) => {
+        setdataSource(res?.users);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  };
   const [inputValue, setInputValue] = React.useState('');
 
   const onSelect = (data, option) => {
-    console.log("onSelect" ,data , option.children[1]?.props?.children[0])
+    console.log("onSelect", data, option.children[1]?.props?.children[0])
     setInputValue(option.children[1]?.props?.children[0]);
   };
 
@@ -52,29 +51,29 @@ export default function Navbar() {
       <div className="navbar flex flex-wrap pb-7">
         <h2 className="header pt-2 flex gap-2 font-bold  items-center ">Clarity Ui</h2>
         <div className="searchfield">
-        <AutoComplete
-                value={inputValue}
+          <AutoComplete
+            value={inputValue}
 
-        dataSource={dataSource.map((item)=>{
-          console.log("item" , item)
-          return(
-            <div className="grid pb-3">
-            <img className="w-[40px] h-[40px]" src={item?.image} alt={item?.image} />
-            <h1>
-              {item.firstName} {item?.lastName}
-            </h1></div>
-          )
-        })}
-        notFoundContent="no result found"
-        onSelect={onSelect}
-        onSearch={onSearch}
-        placeholder="input here"
-        className=" lg:flex hidden"
-      >
-        <Input   prefix={<SearchOutlined />}/>
-      </AutoComplete>
+            dataSource={dataSource.map((item) => {
+              console.log("item", item)
+              return (
+                <div className="grid pb-3">
+                  <img className="w-[40px] h-[40px]" src={item?.image} alt={item?.image} />
+                  <h1>
+                    {item.firstName} {item?.lastName}
+                  </h1></div>
+              )
+            })}
+            notFoundContent="no result found"
+            onSelect={onSelect}
+            onSearch={onSearch}
+            placeholder="Type to search"
+            className=" lg:flex hidden"
+          >
+            <Input prefix={<SearchOutlined />} />
+          </AutoComplete>
 
-          </div>
+        </div>
         <div className="flex pt-2 gap-10 absolute sm:right-[50px] right-[6px]">
           <Badge count={5}>
 
@@ -82,7 +81,7 @@ export default function Navbar() {
           </Badge>
           <BellOutlined />
           <div className="mt-[-5px]">
-          <Avatar icon={<UserOutlined />} />
+            <Avatar icon={<UserOutlined />} />
 
           </div>
           <div className="lg:hidden block ">

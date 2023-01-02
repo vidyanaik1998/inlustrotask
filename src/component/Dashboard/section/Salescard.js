@@ -12,7 +12,7 @@ const SalesCard = () => {
 
     return (
         <>
-            <div className='flex flex-wrap gap-7 pt-8 pb-8 '>
+            <div className='flex flex-wrap gap-6 pt-8 pb-8 '>
                 {data?.map((item) => {
                     return (
                         <div key={item?.id} className='lg:w-[23%] w-full  border-[1px] rounded-[8px] border-[#d1c7c7] p-3'>

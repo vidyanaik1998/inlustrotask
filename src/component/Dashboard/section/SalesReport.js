@@ -111,7 +111,7 @@ const ChartContainer = () => {
                 <div className="pb-3 flex-wrap sm:gap-0 gap-2 flex justify-between">
                     <h3 className=' text-[18px] font-bold'>Sales Report</h3>
 
-                    <div className="flex gap-5">
+                    <div className="flex gap-5 pb-4">
                         <button onClick={() => {
                             setbuttonstate('SalesReport1');
                             setData(SalesReport1)

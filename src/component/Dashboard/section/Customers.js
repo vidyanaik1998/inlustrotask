@@ -37,7 +37,7 @@ const RecentCustomer = () => {
                         <>
                             <div className='flex pb-4'>
                                 <img className='w-[50px] h-[50px] object-cover' src={item?.image} alt={item?.image} />                            
-                                    <div className='w-[50%] pt-2'>
+                                    <div className='w-[45%] pt-2'>
                                         <h4>{item?.firstName} {item?.lastName} </h4>
                                         <p className='text-[#787474] text-[16px] '>{item?.email} </p>
                                     </div>
@@ -51,7 +51,7 @@ const RecentCustomer = () => {
                     )
                 })}
                 <Link to="/customer">
-                <button className='flex items-center gap-2 capitalize text-[#787474] text-[16px]'>
+                <button className='flex items-center pb-5 gap-2 capitalize text-[#787474] text-[16px]'>
                   <span> see all customers</span> 
                     <RightOutlined />
                 </button></Link>
